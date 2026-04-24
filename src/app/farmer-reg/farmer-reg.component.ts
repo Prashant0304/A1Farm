@@ -6,6 +6,8 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FarmerRegService } from '../services/farmer-reg.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-farmer-reg',
@@ -21,7 +23,11 @@ export class FarmerRegComponent {
 
   states = ['Karnataka', 'Tamil Nadu', 'Kerala', 'Andhra Pradesh'];
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private farmerregservice: FarmerRegService,
+    private toastr: ToastrService,
+  ) {
     this.farmerForm = this.fb.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required, Validators.pattern('[0-9]{10}')]],
@@ -34,6 +40,21 @@ export class FarmerRegComponent {
   submitForm() {
     if (this.farmerForm.valid) {
       console.log(this.farmerForm.value);
+      const data = {
+        ...this.farmerForm.value,
+        FarmerId: 0,
+        StateId: 1,
+        DistrictId: 1,
+      };
+      this.farmerregservice.addFarmer(data).subscribe({
+        next: (data) => {
+          console.log(data);
+          this.toastr.success('Farmer registered successfully', 'Sucess');
+        },
+        error: (err) => {
+          console.log(err);
+        },
+      });
     }
   }
 }
