@@ -1,0 +1,155 @@
+<div class="auth-shell">
+
+    <div class="hero-panel">
+        <div class="hero-content">
+            <div class="logo-mark">🌿</div>
+            <h1 class="brand">A1Farm</h1>
+            <p class="tagline">Join thousands of farmers managing smarter</p>
+        </div>
+    </div>
+
+    <div class="form-panel">
+
+        <div class="form-card">
+
+            <div class="form-header">
+                <div class="mobile-logo"><span>🌿</span> A1Farm</div>
+                <h2>Farmer Registration</h2>
+                <p>Register farmer details</p>
+            </div>
+
+            <form [formGroup]="farmerForm" (ngSubmit)="submitForm()" novalidate>
+
+                <div class="fields-row">
+
+
+                    <div class="field">
+                        <label>Farmer Name <span class="req">*</span></label>
+
+                        <div class="input-wrap"
+                            [class.error]="farmerForm.get('name')?.invalid && farmerForm.get('name')?.touched">
+
+                            <span class="input-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </span>
+
+                            <input type="text" formControlName="name" placeholder="Enter farmer name" />
+
+                        </div>
+
+                        @if (farmerForm.get('name')?.invalid && farmerForm.get('name')?.touched) {
+                        <span class="field-error">Farmer name is required</span>
+                        }
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>Phone Number <span class="req">*</span></label>
+
+                        <div class="input-wrap"
+                            [class.error]="farmerForm.get('phone')?.invalid && farmerForm.get('phone')?.touched">
+
+                            <span class="input-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </span>
+
+                            <input type="tel" formControlName="phone" maxlength="10"
+                                placeholder="Enter 10 digit number" />
+
+                        </div>
+
+                        @if (farmerForm.get('phone')?.invalid && farmerForm.get('phone')?.touched) {
+                        <span class="field-error">Enter valid 10 digit mobile</span>
+                        }
+
+                    </div>
+
+                </div>
+
+
+                <div class="fields-row">
+
+
+                    <div class="field">
+
+                        <label>Village</label>
+
+                        <div class="input-wrap">
+                            <span class="input-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+
+                            <input type="text" formControlName="village" placeholder="Enter village" />
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="fields-row">
+
+
+                        <div class="field">
+
+                            <label>State <span class="req">*</span></label>
+
+                            <div class="input-wrap">
+                                <span class="input-icon">
+                                    <i class="fa-solid fa-earth-asia"></i>
+                                </span>
+
+                                <select formControlName="state" (change)="onStateChange()">
+                                    <option value="">Select State</option>
+                                    <option *ngFor="let s of states" [value]="s.StateId">
+                                        {{ s.Name }}
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="field">
+
+                        <label>District <span class="req">*</span></label>
+
+                        <div class="input-wrap">
+                            <span class="input-icon">
+                                <i class="fa-solid fa-map"></i>
+                            </span>
+
+                            <select formControlName="district">
+                                <option value="">Select District</option>
+                                <option *ngFor="let d of districts" [value]="d.DistrictId">
+                                    {{ d.Name }}
+                                </option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <button type="submit" class="btn-primary" [disabled]="farmerForm.invalid">
+                    <i class="fa-solid fa-user-plus"></i> Register Farmer
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
