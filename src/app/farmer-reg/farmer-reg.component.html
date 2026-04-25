@@ -101,7 +101,7 @@
                                     <i class="fa-solid fa-earth-asia"></i>
                                 </span>
 
-                                <select formControlName="state" (change)="onStateChange()">
+                                <select formControlName="stateId" (change)="onStateChange()">
                                     <option value="">Select State</option>
                                     <option *ngFor="let s of states" [value]="s.StateId">
                                         {{ s.Name }}
@@ -125,7 +125,7 @@
                                 <i class="fa-solid fa-map"></i>
                             </span>
 
-                            <select formControlName="district">
+                            <select formControlName="districtId">
                                 <option value="">Select District</option>
                                 <option *ngFor="let d of districts" [value]="d.DistrictId">
                                     {{ d.Name }}

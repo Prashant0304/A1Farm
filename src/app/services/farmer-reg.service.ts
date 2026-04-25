@@ -25,4 +25,8 @@ export class FarmerRegService {
   getDistricts(StateId: number) {
     return this.http.get<any[]>(`${this.baseUrl}/Master/districts/${StateId}`);
   }
+
+  verifyOtp(data: any) {
+    return this.http.post(`${this.baseUrl}/verifyOtp`, data);
+  }
 }

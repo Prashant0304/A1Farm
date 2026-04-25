@@ -8,11 +8,14 @@ import {
 import { CommonModule } from '@angular/common';
 import { FarmerRegService } from '../services/farmer-reg.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { VerifyOtpComponent } from '../verify-otp/verify-otp.component';
 
 @Component({
   selector: 'app-farmer-reg',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, MatDialogModule],
   templateUrl: './farmer-reg.component.html',
   styleUrls: ['./farmer-reg.component.css'],
 })
@@ -27,13 +30,15 @@ export class FarmerRegComponent {
     private fb: FormBuilder,
     private farmerregservice: FarmerRegService,
     private toastr: ToastrService,
+    private router: Router,
+    private dialog: MatDialog,
   ) {
     this.farmerForm = this.fb.group({
       name: ['', Validators.required],
       phone: ['', [Validators.required, Validators.pattern('[0-9]{10}')]],
       village: [''],
-      district: ['', Validators.required],
-      state: ['', Validators.required],
+      districtId: ['', Validators.required],
+      stateId: ['', Validators.required],
     });
   }
 
@@ -43,13 +48,21 @@ export class FarmerRegComponent {
       const data = {
         ...this.farmerForm.value,
         FarmerId: 0,
-        StateId: 1,
-        DistrictId: 1,
       };
       this.farmerregservice.addFarmer(data).subscribe({
         next: (data) => {
           console.log(data);
-          this.toastr.success('Farmer registered successfully', 'Sucess');
+          this.toastr.success(
+            'Farmer registered successfully & OTP sent to mobile',
+            'Sucess',
+          );
+          const dialogRef = this.dialog.open(VerifyOtpComponent, {
+            width: '400px',
+            disableClose: true,
+            data: {
+              phone: this.farmerForm.value.phone,
+            },
+          });
         },
         error: (err) => {
           console.log(err);
@@ -69,7 +82,7 @@ export class FarmerRegComponent {
   }
 
   onStateChange() {
-    const stateId = this.farmerForm.get('state')?.value;
+    const stateId = this.farmerForm.get('stateId')?.value;
 
     this.farmerregservice.getDistricts(stateId).subscribe((res) => {
       this.districts = res;
