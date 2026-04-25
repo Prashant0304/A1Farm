@@ -1,0 +1,102 @@
+<div class="container contract-page">
+
+  <div class="card contract-card shadow-lg">
+    
+    <!-- Header -->
+    <div class="card-header d-flex align-items-center justify-content-between">
+      <h5 class="mb-0">
+        <i class="bi bi-file-earmark-plus me-2"></i> Add Contract
+      </h5>
+    </div>
+
+    <div class="card-body">
+
+      <!-- 🔍 Search -->
+      <div class="mb-4">
+        <label class="form-label">Search Farmer</label>
+
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="text"
+                 placeholder="Search by name or phone..."
+                 [(ngModel)]="searchText"
+                 (input)="onSearchChange()" />
+        </div>
+
+        <!-- Results -->
+        <div *ngIf="farmers.length" class="search-results">
+          <div *ngFor="let f of farmers"
+               (click)="selectFarmer(f)"
+               class="result-item">
+            <i class="bi bi-person-circle"></i>
+            <div>
+              <div class="fw-semibold">{{f.name}}</div>
+              <small>{{f.phone}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selected -->
+      <div *ngIf="selectedFarmer" class="selected-box">
+        <i class="bi bi-check-circle"></i>
+        {{selectedFarmer.name}} selected
+      </div>
+
+      <!-- Dropdowns -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Land</label>
+          <select [(ngModel)]="form.landId" class="form-select modern-input">
+            <option value="">Select Land</option>
+            <option *ngFor="let l of lands" [value]="l.landId">
+  {{l.landLocation}} ({{l.soilType}} Soil)
+</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label>Crop</label>
+          <select [(ngModel)]="form.cropId" class="form-select modern-input">
+            <option value="">Select Crop</option>
+            <option *ngFor="let c of crops" [value]="c.cropId">
+              {{c.cropName}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dates -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Start Date</label>
+          <input type="date" [(ngModel)]="form.startDate" class="form-control modern-input">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>End Date</label>
+          <input type="date" [(ngModel)]="form.endDate" class="form-control modern-input">
+        </div>
+      </div>
+
+      <!-- Numbers -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label>Rate (₹/Kg)</label>
+          <input type="number" [(ngModel)]="form.rate" class="form-control modern-input">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label>Expected Yield</label>
+          <input type="number" [(ngModel)]="form.yield" class="form-control modern-input">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="text-end">
+        <button class="btn btn-success save-btn" (click)="saveContract()">
+          <i class="bi bi-check2-square me-2"></i> Save Contract
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
