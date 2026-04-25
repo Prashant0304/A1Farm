@@ -19,9 +19,9 @@ import { ToastrService } from 'ngx-toastr';
 export class FarmerRegComponent {
   farmerForm: FormGroup;
 
-  districts = ['Bangalore Rural', 'Tumkur', 'Kolar', 'Mandya', 'Mysore'];
+  districts: any[] = [];
 
-  states = ['Karnataka', 'Tamil Nadu', 'Kerala', 'Andhra Pradesh'];
+  states: any[] = [];
 
   constructor(
     private fb: FormBuilder,
@@ -56,5 +56,23 @@ export class FarmerRegComponent {
         },
       });
     }
+  }
+
+  ngOnInit() {
+    this.loadStates();
+  }
+
+  loadStates() {
+    this.farmerregservice.getStates().subscribe((res) => {
+      this.states = res;
+    });
+  }
+
+  onStateChange() {
+    const stateId = this.farmerForm.get('state')?.value;
+
+    this.farmerregservice.getDistricts(stateId).subscribe((res) => {
+      this.districts = res;
+    });
   }
 }

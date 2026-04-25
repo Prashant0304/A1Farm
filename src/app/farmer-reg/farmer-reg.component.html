@@ -89,6 +89,32 @@
                     </div>
 
 
+                    <div class="fields-row">
+
+
+                        <div class="field">
+
+                            <label>State <span class="req">*</span></label>
+
+                            <div class="input-wrap">
+                                <span class="input-icon">
+                                    <i class="fa-solid fa-earth-asia"></i>
+                                </span>
+
+                                <select formControlName="state" (change)="onStateChange()">
+                                    <option value="">Select State</option>
+                                    <option *ngFor="let s of states" [value]="s.StateId">
+                                        {{ s.Name }}
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
 
                     <div class="field">
 
@@ -101,8 +127,8 @@
 
                             <select formControlName="district">
                                 <option value="">Select District</option>
-                                <option *ngFor="let d of districts" [value]="d">
-                                    {{ d }}
+                                <option *ngFor="let d of districts" [value]="d.DistrictId">
+                                    {{ d.Name }}
                                 </option>
                             </select>
 
@@ -113,30 +139,7 @@
                 </div>
 
 
-                <div class="fields-row">
 
-
-                    <div class="field">
-
-                        <label>State <span class="req">*</span></label>
-
-                        <div class="input-wrap">
-                            <span class="input-icon">
-                                <i class="fa-solid fa-earth-asia"></i>
-                            </span>
-
-                            <select formControlName="state">
-                                <option value="">Select State</option>
-                                <option *ngFor="let s of states" [value]="s">
-                                    {{ s }}
-                                </option>
-                            </select>
-
-                        </div>
-
-                    </div>
-
-                </div>
 
 
                 <button type="submit" class="btn-primary" [disabled]="farmerForm.invalid">

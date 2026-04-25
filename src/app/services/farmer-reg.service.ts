@@ -11,13 +11,18 @@ export class FarmerRegService {
 
   constructor(private http: HttpClient) {}
 
-  // Get all farmers
   getFarmers(): Observable<any> {
     return this.http.get(`${this.baseUrl}/farmers`);
   }
 
-  // Register farmer
   addFarmer(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/farmer`, data);
+  }
+
+  getStates() {
+    return this.http.get<any[]>(`${this.baseUrl}/Master/states`);
+  }
+  getDistricts(StateId: number) {
+    return this.http.get<any[]>(`${this.baseUrl}/Master/districts/${StateId}`);
   }
 }
