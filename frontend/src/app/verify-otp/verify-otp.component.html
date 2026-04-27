@@ -1,0 +1,23 @@
+<div class="otp-container">
+
+    <h2 class="otp-title">Verify OTP</h2>
+
+    <p class="otp-subtitle">
+        OTP sent to <strong>{{ phone }}</strong>
+    </p>
+
+    <form [formGroup]="otpForm" (ngSubmit)="verifyOtp()">
+
+        <input type="text" maxlength="4" formControlName="otp" class="otp-input" placeholder="Enter OTP" />
+
+        <button class="verify-btn" type="submit">
+            Verify OTP
+        </button>
+
+    </form>
+
+    <div class="resend">
+        Didn't receive OTP? <span>Resend</span>
+    </div>
+
+</div>
