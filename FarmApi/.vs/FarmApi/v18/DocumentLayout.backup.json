@@ -1,0 +1,236 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\controllers\\farmercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\controllers\\farmercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\models\\dto\\farmerwithlanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\models\\dto\\farmerwithlanddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\controllers\\mastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\services\\dbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\farmapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\farmapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\middlewares\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\middlewares\\exceptionmiddlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\models\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\models\\request\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\models\\response\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\models\\response\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|d:\\internship\\dotnet\\farm api\\farmapi\\farmapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14EFEC18-DA1E-431E-9610-E9F437B37482}|FarmApi\\FarmApi.csproj|solutionrelative:farmapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 477,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\DTO\\UserDto.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Models\\DTO\\UserDto.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\DTO\\UserDto.cs",
+              "RelativeToolTip": "FarmApi\\Models\\DTO\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:28:16.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Program.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Program.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Program.cs",
+              "RelativeToolTip": "FarmApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:16:55.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FarmerController.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Controllers\\FarmerController.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Controllers\\FarmerController.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Controllers\\FarmerController.cs",
+              "RelativeToolTip": "FarmApi\\Controllers\\FarmerController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:16:55.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\appsettings.json",
+              "RelativeDocumentMoniker": "FarmApi\\appsettings.json",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\appsettings.json",
+              "RelativeToolTip": "FarmApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-24T11:11:00.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbService.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Services\\DbService.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Services\\DbService.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Services\\DbService.cs",
+              "RelativeToolTip": "FarmApi\\Services\\DbService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:16:55.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FarmApi.csproj",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\FarmApi.csproj",
+              "RelativeDocumentMoniker": "FarmApi\\FarmApi.csproj",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\FarmApi.csproj",
+              "RelativeToolTip": "FarmApi\\FarmApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-27T07:26:37.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "FarmApi\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIA4wBYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T13:12:35.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MasterController.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Controllers\\MasterController.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Controllers\\MasterController.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Controllers\\MasterController.cs",
+              "RelativeToolTip": "FarmApi\\Controllers\\MasterController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA8wCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T07:00:23.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FarmerWithLandDto.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\DTO\\FarmerWithLandDto.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Models\\DTO\\FarmerWithLandDto.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\DTO\\FarmerWithLandDto.cs",
+              "RelativeToolTip": "FarmApi\\Models\\DTO\\FarmerWithLandDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:18:24.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthResponse.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\Response\\AuthResponse.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Models\\Response\\AuthResponse.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\Response\\AuthResponse.cs",
+              "RelativeToolTip": "FarmApi\\Models\\Response\\AuthResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:16:55.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExceptionMiddlewareExtensions.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Middlewares\\ExceptionMiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Middlewares\\ExceptionMiddlewareExtensions.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Middlewares\\ExceptionMiddlewareExtensions.cs",
+              "RelativeToolTip": "FarmApi\\Middlewares\\ExceptionMiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T13:14:29.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\Request\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Models\\Request\\LoginRequest.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Models\\Request\\LoginRequest.cs",
+              "RelativeToolTip": "FarmApi\\Models\\Request\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:16:55.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "FarmApi\\Services\\JwtService.cs",
+              "ToolTip": "D:\\Internship\\dotNet\\Farm Api\\FarmApi\\FarmApi\\Services\\JwtService.cs",
+              "RelativeToolTip": "FarmApi\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T08:16:55.723Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

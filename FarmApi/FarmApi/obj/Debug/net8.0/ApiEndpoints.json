@@ -1,0 +1,76 @@
+[
+  {
+    "ContainingType": "FarmApi.Controllers.FarmerController",
+    "Method": "Save",
+    "RelativePath": "api/Farmer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FarmApi.Controllers.FarmerController\u002BFarmer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmApi.Controllers.FarmerController",
+    "Method": "InsertLandDetails",
+    "RelativePath": "api/Farmer/insertlanddetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "FarmApi.Controllers.FarmerController\u002BFarmerLand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmApi.Controllers.FarmerController",
+    "Method": "SaveLand",
+    "RelativePath": "api/Farmer/save-land",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "FarmApi.Controllers.FarmerController\u002BSaveLandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmApi.Controllers.MasterController",
+    "Method": "GetDistricts",
+    "RelativePath": "api/Master/districts/{stateId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stateId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FarmApi.Controllers.MasterController",
+    "Method": "GetStates",
+    "RelativePath": "api/Master/states",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
